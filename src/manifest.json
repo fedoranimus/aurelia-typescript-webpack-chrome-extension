@@ -1,0 +1,14 @@
+{
+    // Required
+    "manifest_version": 2,
+    "name": "Aurelia extension",
+    "version": "0.1.0",
+
+    // Recommended
+    "description": "A Chrome extension built in Aurelia",
+
+    "author": "Tim Turner",
+    "chrome_url_overrides": {
+        "newtab": "index.html"
+    }
+}
