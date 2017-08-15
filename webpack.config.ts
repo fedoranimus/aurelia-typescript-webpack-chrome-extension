@@ -7,6 +7,7 @@ const config: webpack.Configuration = {
     entry: {
         app: 'aurelia-bootstrapper'
     },
+    devtool: 'inline-source-map',
     output: {
         path: path.resolve(__dirname, 'dist'),
         filename: '[name].js',
@@ -31,12 +32,17 @@ const config: webpack.Configuration = {
         {
             test: /\.css$/i,
             issuer: /\.html?$/i,
-            use: 'style-loader'
+            use: 'css-loader'
         },
         {
             test: /\.html$/i,
             use: 'html-loader'  
-        }]
+        },
+        { 
+            test: /\.(png|woff|woff2|eot|ttf|svg)(\?|$)/, 
+            loader: 'url-loader?limit=100000' 
+        }
+    ]
     },
     plugins: [
         new AureliaPlugin({

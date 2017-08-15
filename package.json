@@ -14,16 +14,16 @@
     "aurelia-framework": "^1.1.4"
   },
   "devDependencies": {
-    "@types/webpack": "^3.0.5",
+    "@types/webpack": "^3.0.9",
     "@types/webpack-env": "^1.13.0",
     "aurelia-webpack-plugin": "^2.0.0-rc.3",
     "copy-webpack-plugin": "^4.0.1",
-    "html-loader": "^0.5.0",
-    "style-loader": "^0.18.2",
+    "html-loader": "^0.5.1",
+    "css-loader": "^0.28.4",
     "ts-loader": "^2.3.2",
     "ts-node": "^3.3.0",
     "typescript": "^2.4.2",
-    "webpack": "^3.4.1",
+    "webpack": "^3.5.4",
     "webpack-chrome-extension-reloader": "^0.4.0"
   }
 }
